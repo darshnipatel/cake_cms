@@ -1,0 +1,830 @@
+2022-11-11 08:17:38 error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver.php on line 133
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [1045] Access denied for user \'my_app\'@\'localhost\' (using password: YES)',
+)
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Connection.php:418
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:1706
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:1261
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:11
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:164
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Caused by: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver.php on line 125
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver.php:125
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Connection.php:418
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:1706
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:1261
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:11
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:164
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/index
+2022-11-11 08:18:17 error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver.php on line 133
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [1045] Access denied for user \'my_app\'@\'localhost\' (using password: YES)',
+)
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Connection.php:418
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:1706
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:1261
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:11
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Caused by: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver.php on line 125
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver.php:125
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Connection.php:418
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:1706
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:1261
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:11
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/index
+2022-11-11 08:18:55 error: [Cake\View\Exception\MissingTemplateException] Template file `Articles\index.php` could not be found.
+
+The following paths were searched:
+
+- `D:\xampp\htdocs\test-project\templates\Articles\index.php`
+- `D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\templates\Articles\index.php`
+ in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\View\View.php on line 1398
+Exception Attributes: array (
+  'file' => 'Articles\\index.php',
+  'paths' => 
+  array (
+    0 => 'D:\\xampp\\htdocs\\test-project\\templates\\',
+    1 => 'D:\\xampp\\htdocs\\test-project\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\View\View.php:805
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:773
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:556
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/index
+2022-11-11 08:23:45 error: [Cake\View\Exception\MissingTemplateException] Template file `Articles\view.php` could not be found.
+
+The following paths were searched:
+
+- `D:\xampp\htdocs\test-project\templates\Articles\view.php`
+- `D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\templates\Articles\view.php`
+ in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\View\View.php on line 1398
+Exception Attributes: array (
+  'file' => 'Articles\\view.php',
+  'paths' => 
+  array (
+    0 => 'D:\\xampp\\htdocs\\test-project\\templates\\',
+    1 => 'D:\\xampp\\htdocs\\test-project\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\View\View.php:805
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:773
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:556
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/view/first-post
+2022-11-11 08:24:23 error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::edit() could not be found, or is not accessible. in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php on line 526
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'edit',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:134
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/edit/first-post
+Referer URL: http://localhost/test-project/articles/view/first-post
+2022-11-11 08:26:16 error: [ArgumentCountError] Too few arguments to function Cake\ORM\Table::newEntity(), 0 passed in D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php on line 22 and at least 1 expected in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php on line 2774
+Stack Trace:
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:22
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/add
+Referer URL: http://localhost/test-project/articles/index
+2022-11-11 08:31:55 error: [ArgumentCountError] Too few arguments to function Cake\ORM\Table::newEntity(), 0 passed in D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php on line 22 and at least 1 expected in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php on line 2774
+Stack Trace:
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:22
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/add
+Referer URL: http://localhost/test-project/articles
+2022-11-11 08:34:18 error: [ArgumentCountError] Too few arguments to function Cake\ORM\Table::newEntity(), 0 passed in D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php on line 23 and at least 1 expected in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php on line 2774
+Stack Trace:
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:23
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/add
+Referer URL: http://localhost/test-project/articles
+2022-11-11 08:35:20 error: [Error] Class "App\Controller\TableRegistry" not found in D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php on line 23
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/add
+2022-11-11 08:36:14 error: [Error] Class "App\Controller\TableRegistry" not found in D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php on line 24
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/add
+2022-11-11 08:36:16 error: [Error] Class "App\Controller\TableRegistry" not found in D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php on line 24
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/add
+2022-11-11 08:37:45 error: [ArgumentCountError] Too few arguments to function Cake\ORM\Table::newEntity(), 0 passed in D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php on line 24 and at least 1 expected in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php on line 2774
+Stack Trace:
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:24
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/add
+2022-11-11 08:39:04 error: [ArgumentCountError] Too few arguments to function Cake\ORM\Table::newEntity(), 0 passed in D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php on line 31 and at least 1 expected in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php on line 2774
+Stack Trace:
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:31
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/add
+2022-11-11 08:43:00 warning: Undefined variable $article
+Request URL: /articles/add
+Trace:
+include D:\xampp\htdocs\test-project\templates\Articles\add.php, line 5
+Cake\View\View::_evaluate() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-11 08:44:04 warning: Undefined variable $article
+Request URL: /articles/add
+Trace:
+App\Controller\ArticlesController::add() D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php, line 46
+Cake\Controller\Controller::invokeAction() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-11 08:44:05 warning: Unable to emit headers. Headers sent in file=D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php line=36
+Request URL: /articles/add
+Trace:
+Cake\Http\ResponseEmitter::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-11 08:44:05 warning: Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /articles/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-11 08:44:05 warning: Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /articles/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-11 08:44:05 warning: Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /articles/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-11 08:46:49 error: [ArgumentCountError] Too few arguments to function Cake\ORM\Table::newEntity(), 0 passed in D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php on line 33 and at least 1 expected in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php on line 2774
+Stack Trace:
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:33
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/add
+2022-11-11 08:48:18 error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::create() could not be found, or is not accessible. in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php on line 526
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'create',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:134
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/create
+Referer URL: http://localhost/test-project/articles
+2022-11-14 07:52:09 error: [Error] Class "App\Model\Entity\DefaultPasswordHasher" not found in D:\xampp\htdocs\test-project\src\Model\Entity\User.php on line 50
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Datasource\EntityTrait.php:260
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Marshaller.php:606
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Table.php:2878
+- D:\xampp\htdocs\test-project\src\Controller\UsersController.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /users/add
+Referer URL: http://localhost/test-project/users/add
+2022-11-14 07:55:02 warning: Attempt to read property "user" on null
+Request URL: /articles/add
+Referer URL: http://localhost/test-project/articles/add
+Trace:
+App\Controller\ArticlesController::add() D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php, line 37
+Cake\Controller\Controller::invokeAction() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Authentication\Middleware\AuthenticationMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-14 07:55:02 warning: Attempt to read property "id" on null
+Request URL: /articles/add
+Referer URL: http://localhost/test-project/articles/add
+Trace:
+App\Controller\ArticlesController::add() D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php, line 37
+Cake\Controller\Controller::invokeAction() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Authentication\Middleware\AuthenticationMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-14 07:55:02 warning: Unable to emit headers. Headers sent in file=D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php line=36
+Request URL: /articles/add
+Referer URL: http://localhost/test-project/articles/add
+Trace:
+Cake\Http\ResponseEmitter::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-14 07:55:02 warning: Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /articles/add
+Referer URL: http://localhost/test-project/articles/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-14 07:55:02 warning: Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /articles/add
+Referer URL: http://localhost/test-project/articles/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-14 07:55:02 warning: Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /articles/add
+Referer URL: http://localhost/test-project/articles/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] D:\xampp\htdocs\test-project\webroot\index.php, line 40
+
+2022-11-14 07:59:47 error: [ParseError] syntax error, unexpected single-quoted string "accessibleFields", expecting ")" in D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php on line 52
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\composer\ClassLoader.php:428
+- [internal]:??
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Core\App.php:161
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Core\App.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:337
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:72
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles
+2022-11-14 08:22:04 error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "articles" in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php on line 509
+Stack Trace:
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:49
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/edit/1
+Referer URL: http://localhost/test-project/users/view/1
+2022-11-14 08:23:10 error: [InvalidArgumentException] Cannot convert value of type `string` to integer in D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Type\IntegerType.php on line 40
+Stack Trace:
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Type\IntegerType.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\TypeConverterTrait.php:39
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Statement\PDOStatement.php:96
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:113
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:164
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\ValueBinder.php:148
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Connection.php:359
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Connection.php:363
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Database\Query.php:254
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Query.php:1148
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php:288
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\ORM\Query.php:1096
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php:495
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php:506
+- D:\xampp\htdocs\test-project\src\Controller\ArticlesController.php:49
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\xampp\htdocs\test-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\xampp\htdocs\test-project\webroot\index.php:40
+
+Request URL: /articles/edit/first-post
+Referer URL: http://localhost/test-project/articles/view/1
